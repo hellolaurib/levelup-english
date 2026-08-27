@@ -26,3 +26,7 @@ Publica `dist/` a la rama `gh-pages` vía el paquete [`gh-pages`](https://www.np
 ## Agregar preguntas
 
 Edita `src/data/questions.js` — cada pregunta tiene `difficulty` (1-3), `type` (`term` | `phrase` | `fill`), `prompt`, `options` (4) y `answerIndex`.
+
+## Créditos
+
+Tiles y personajes: [Cozy Asset Pack](https://opengameart.org/content/cozy-asset-pack-10) por Ishtar Pixels, licencia CC0 (dominio público).

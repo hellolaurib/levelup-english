@@ -1,13 +1,13 @@
 export default function EndScreen({ won, score, best, correctCount, total, onRestart }) {
   return (
     <div className="flex min-h-[80vh] flex-col items-center justify-center px-6 text-center">
-      <span className="mb-4 text-5xl">{won ? '🏆' : '💛'}</span>
+      <span className="mb-4 text-5xl">{won ? '🏡' : '💛'}</span>
       <h1 className="text-[28px] font-bold tracking-[-0.02em] text-ink sm:text-[34px]">
-        {won ? '¡Completaste el juego!' : 'Se acabaron las vidas'}
+        {won ? '¡Llegaste a la última casita!' : 'Se acabaron las vidas'}
       </h1>
       <p className="mt-3 max-w-sm text-[15px] leading-[1.55] text-ink-3">
         {won
-          ? 'Respondiste todas las preguntas. Tu inglés de entrevista está más listo de lo que crees.'
+          ? 'Hablaste con todo el pueblo. Tu inglés de entrevista está más listo de lo que crees.'
           : 'Cada error aquí es una palabra que ahora vas a recordar mejor. Inténtalo de nuevo.'}
       </p>
 
