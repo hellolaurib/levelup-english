@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Public Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --color-ink: #17181c;
+  --color-ink-3: #5a5f6b;
+  --color-ink-4: #8a8f9c;
+  --color-bg: #fdf5f7;
+  --color-surface: #ffffff;
+  --color-border: #ebe4e6;
+  --color-accent: #e08fa3;
+  --color-accent-ink: #a24261;
+  --color-accent-bg: #fcedf1;
+  --color-good: #4a7c59;
+  --color-good-bg: #eaf5ec;
+  --color-bad: #c1495a;
+  --color-bad-bg: #fceeef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pop {
+  animation: pop 220ms ease-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: shake 320ms ease-in-out;
+}
